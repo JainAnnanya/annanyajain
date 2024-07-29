@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annanya - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href = "#" class = "logo"> 
+            <span>Annan</span>ya
+        </a>
+        <nav class="navbar">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+        </nav>
+        <a href="mailto: ajain72@stevens.edu" class="contact"> Contact Me</a>
+    </header>
+
+
+    <section class="home">
+        <div class="home-content">
+            <h3> Hi, It's a pleasure to meet you!</h3>
+            <h1>I'm <span>Annanya Jain<br></span>Let's embrace technology with humility.</h1>
+            <p>I'm currently pursuing a Bachelor of Science in Computer Science at Stevens Institute of Technology in Hoboken, NJ. 
+                As a rising junior, I find myself genuinely captivated by the endless possibilities that technology holds and driven by an unwavering desire to learn and grow.
+                I aim to make a meaningful impact in the world of technology through innovative solutions and cutting-edge advancements. 
+                I believe that every challenge and exciting project presents an opportunity for personal growth and development, and I approach them with a humble attitude and a keen desire to learn.
+            </p>
+          <div class= "btn-box">
+            <a href="https://www.linkedin.com/in/jain-annanya/" class = "btn-1" target = "_blank">LinkedIn</a>
+            <button class = "btn-2" id = "downloadCvBtn" >Download CV</button>
+          </div>
+      </section>
+
+
+  <section id="about" class = "about">
+    <div class="about-img">
+        <img src="me.jpeg" alt="Annanya Jain">
+    </div>
+
+      <div class="about-content">
+          <h3>About <span>Me</span></h3>
+          <p> I am a self-motivated learner and my passion lies in leveraging technology to solve complex business problems and drive meaningful change. I stay updated with the latest technological advancements and market trends, constantly expanding my skill set in areas like algorithms, database management, and programming languages (Java, C++, Python).
+         My experiences have fueled my desire to engage in technological advancements with a problem-solving mindset. Witnessing the impact of AI and ML on businesses has inspired my career aspirations in Solution Architecture and Data Science. </p>
+      </div>
+  </section>
+
+  <section class = "projects" id="projects" >
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Health Advisor Chatbot</h3>
+            <a href = "https://github.com/JainAnnanya/Water-Jug-Puzzle-Solver" target = "_blank"> 
+                <img src = "Health.png" alt = "Health Advisor Chatbot">
+            </a>
+            <p>Developed a conversational AI Health Advisor chatbot using Streamlit, LangChain, and CTransformers, fetching and cleaning data
+                from Reddit API with PRAW, BeautifulSoup, and Pandas.</p>
+        </div>
+        <div class="project">
+            <h3>Water Jug Puzzle Solver</h3>
+            <a href = "https://github.com/JainAnnanya/Water-Jug-Puzzle-Solver" target = "_blank"> 
+                <img src = "Water_jug.png" alt = "Water Jug Puzzle Solver">
+            </a>
+            <p>Engineered an advanced C++ program, elegantly mastering the breadth-first search and backtracking algorithm to
+                tackle the three-jug water puzzle through optimal problem solving.
+                </p>
+        </div>
+    </div>
+  </section>
+  
+  <div class="experience" id = "experience">
+    <h2>Experience</h2>
+    <div class="experience-list">
+        <div class="experience-item">
+            <h3>Course Assistant – Algorithms (Incoming Fall 2024)</h3>
+            <p><strong>Stevens Institute of Technology</strong><br>Sept 2024 – Dec 2024, Hoboken, NJ</p>
+            <p>I will be assisting in teaching and grading for the Algorithms course.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Software Developer Intern</h3>
+            <p><strong>ENTRADA Ventures Group, LLC</strong><br>June 2024 – Present, Manhasset, NY</p>
+            <p>Developed a Large Language Model to enhance patient engagement and integrated sentiment analysis.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Undergraduate Research Assistant</h3>
+            <p><strong>Stevens Institute of Technology</strong><br>Jan 2024 – June 2024, Hoboken, NJ</p>
+            <p>Analyzed ChatGPT’s impact on code quality and implemented Python algorithms for data leak detection.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Undergraduate Research Assistant</h3>
+            <p><strong>Stevens Institute of Technology</strong><br>June 2023 – May 2024, Hoboken, NJ</p>
+            <p>Explored the relationship between AI skills and journalism job trends over the past decade using PostgreSQL and R.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Learning Technology Assistant</h3>
+            <p><strong>Stevens Institute of Technology</strong><br>Aug 2023 – June 2024, Hoboken, NJ</p>
+            <p>Provided technical support and optimized audiovisual equipment for smooth networking.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/jain-annanya/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/JainAnnanya" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("downloadCvBtn").addEventListener('click', function(){
+        const link = document.createElement('a');
+        link.href = 'Annanya_Jain_Resume.pdf';
+        link.download = 'Annanya_Jain_Resume.pdf';
+        document.body.appendChild(link);
+        link.click(); // Trigger the download
+        document.body.removeChild(link); // Clean up
+    });
+</script>
+</body>
+</html>
